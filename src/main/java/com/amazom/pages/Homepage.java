@@ -29,6 +29,9 @@ public class Homepage extends TestBase {
 
 	@FindBy(xpath = "//span[text()='Switch Accounts']")
 	WebElement switchAccountlink;
+	
+	@FindBy(xpath="//div[text()='Add account']")
+	WebElement switchAccText;
 
 	@FindBy(xpath = "//span[text()='Sign Out']")
 	WebElement signOutlink;
@@ -44,6 +47,9 @@ public class Homepage extends TestBase {
 
 	@FindBy(xpath = "//span[text()='Explore Showroom']")
 	WebElement exploreShowroomlink;
+	
+	@FindBy(css="a[aria-label='Recommended For You']>span.nav-a-content")
+	WebElement recommendationText;
 
 	public Homepage() {
 		PageFactory.initElements(driver, this);
@@ -51,7 +57,7 @@ public class Homepage extends TestBase {
 
 	public void moveToAccountsLink() {
 		Actions action = new Actions(driver);
-		action.moveToElement(dropdownicon).click().build().perform();
+		action.moveToElement(dropdownicon).build().perform();
 
 	}
 
@@ -70,9 +76,15 @@ public class Homepage extends TestBase {
 		return new YourOrderPage();
 
 	}
+	public String recommendatioText() {
+		return recommendationText.getText();
+		
+	}
+	
 
 	public void yourRec() {
 		yourRecommenLink.click();
+		
 
 	}
 
@@ -80,9 +92,11 @@ public class Homepage extends TestBase {
 		MembershipsLink.click();
 	}
 
-	public void switchAcclink() {
+	public String switchAcclink() {
 		switchAccountlink.click();
+		 return switchAccText.getText();
 	}
+	
 
 	public void signOut() {
 		signOutlink.click();

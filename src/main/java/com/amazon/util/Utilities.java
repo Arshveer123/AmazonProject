@@ -11,7 +11,7 @@ import com.amazom.base.TestBase;
 
 public class Utilities extends TestBase {
 	
-	public String getTitle(WebDriver driver) {
+	public String getTitle() {
 		return driver.getTitle();
 		
 	}

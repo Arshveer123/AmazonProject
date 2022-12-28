@@ -1,6 +1,11 @@
 
 package com.amazom.pages;
 
-public class AccountPage {
 
+import com.amazom.base.TestBase;
+
+public class AccountPage extends TestBase {
+	
 }
+
+
