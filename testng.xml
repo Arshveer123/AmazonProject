@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
-<listeners>
-<!--<listener class-name="com.amazon.util.TestListener"></listener>-->
-<!--<listener class-name="com.amazon.util.RetryAnalyzer"></listener>-->
-<listener class-name="com.amazon.util.extentReport"></listener>
-</listeners>
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.amazon.test.SearchTest"/>
-    <!--  <class name="com.amazon.test.YouOrderTest"/>
-      <class name="com.amazon.test.FilterSortTest"/>
-      <class name="com.amazon.test.YourPaymentTest"/>
-      <class name="com.amazon.test.LoginPageTest"/>
-      <class name="com.amazon.test.GuestUserTest"/>
-      <class name="com.amazon.test.AddressPageTest"/>
-      <class name="com.amazon.test.HomepageTest"/>
-      <class name="com.amazon.test.ShoppingCartTest"></class>-->
-    
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.amazon.util.TestListener"></listener>
+		<!--<listener class-name="com.amazon.util.RetryAnalyzer"></listener>-->
+		<listener class-name="com.qa.ExtentReports.ExtentReport"></listener>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.amazon.test.SearchTest" />
+			<class name="com.amazon.test.YouOrderTest" />
+			<class name="com.amazon.test.FilterSortTest" />
+			<class name="com.amazon.test.YourPaymentTest" />
+			<class name="com.amazon.test.LoginPageTest" />
+			<class name="com.amazon.test.GuestUserTest" />
+			<class name="com.amazon.test.AddressPageTest" />
+			<class name="com.amazon.test.HomepageTest" />
+			<class name="com.amazon.test.ShoppingCartTest"></class>
+
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

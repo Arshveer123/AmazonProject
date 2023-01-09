@@ -1,58 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.amazon.util.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazon.test.YourPaymentTest">
-        <methods>
-          <include name="addCreditOrDebitCard"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.amazon.test.YourPaymentTest -->
-      <class name="com.amazon.test.SearchTest">
-        <methods>
-          <include name="nextPageFunctionality"/>
-          <include name="searchByPartialText"/>
-          <include name="ifItemsAreUniqueOrNot"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.amazon.test.SearchTest -->
-      <class name="com.amazon.test.FilterSortTest">
-        <methods>
-          <include name="filterByPrice"/>
-          <include name="sortingByPriceLowToHigh"/>
-          <include name="filterByCustomerRating"/>
-          <include name="tearDown"/>
-          <include name="filterByNewArrivalfromLast90Days"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.amazon.test.FilterSortTest -->
-      <class name="com.amazon.test.AddressPageTest">
+      <class name="com.amazon.test.BrokenLinks">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="setDefaultAddress"/>
+          <include name="checkingBrokenLinks"/>
         </methods>
-      </class> <!-- com.amazon.test.AddressPageTest -->
-      <class name="com.amazon.test.YouOrderTest">
-        <methods>
-          <include name="cancelOrderTextTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.amazon.test.YouOrderTest -->
-      <class name="com.amazon.test.GuestUserTest">
-        <methods>
-          <include name="guestUserTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.amazon.test.GuestUserTest -->
+      </class> <!-- com.amazon.test.BrokenLinks -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
