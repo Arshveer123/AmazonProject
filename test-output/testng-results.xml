@@ -1,37 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="6" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T04:45:30Z" name="Default suite" finished-at="2022-12-28T04:46:16Z" duration-ms="45764">
+  <suite started-at="2023-01-08T20:02:23 GMT-08:00" name="Suite" finished-at="2023-01-08T20:06:12 GMT-08:00" duration-ms="228917">
     <groups>
     </groups>
-    <test started-at="2022-12-28T04:45:30Z" name="Default test" finished-at="2022-12-28T04:46:16Z" duration-ms="45764">
-      <class name="com.amazon.test.YouOrderTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:45:30Z" name="setUp" finished-at="2022-12-28T04:45:50Z" duration-ms="20514" status="PASS">
+    <test started-at="2023-01-08T20:02:23 GMT-08:00" name="Test" finished-at="2023-01-08T20:06:12 GMT-08:00" duration-ms="228917">
+      <class name="com.amazon.test.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:02:23 GMT-08:00" name="setUp" finished-at="2023-01-08T20:02:36 GMT-08:00" duration-ms="12772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cancelOrderNoTest()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:45:50Z" name="cancelOrderNoTest" finished-at="2022-12-28T04:45:53Z" duration-ms="2532" status="PASS">
+        <test-method signature="ifItemsAreUniqueOrNot()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:02:36 GMT-08:00" name="ifItemsAreUniqueOrNot" finished-at="2023-01-08T20:03:04 GMT-08:00" duration-ms="27935" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.amazon.test.SearchTest.ifItemsAreUniqueOrNot(SearchTest.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cancelOrderNoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:45:53Z" name="tearDown" finished-at="2022-12-28T04:45:54Z" duration-ms="793" status="PASS">
+        </test-method> <!-- ifItemsAreUniqueOrNot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:04 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:03:04 GMT-08:00" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:45:54Z" name="setUp" finished-at="2022-12-28T04:46:12Z" duration-ms="18312" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:04 GMT-08:00" name="setUp" finished-at="2023-01-08T20:03:13 GMT-08:00" duration-ms="8499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="cancelOrderTextTest()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:46:12Z" name="cancelOrderTextTest" finished-at="2022-12-28T04:46:15Z" duration-ms="2909" status="PASS">
+        <test-method signature="nextPageFunctionality()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:13 GMT-08:00" name="nextPageFunctionality" finished-at="2023-01-08T20:03:28 GMT-08:00" duration-ms="15136" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cancelOrderTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.YouOrderTest@4f3bbf68]" started-at="2022-12-28T04:46:15Z" name="tearDown" finished-at="2022-12-28T04:46:16Z" duration-ms="657" status="PASS">
+        </test-method> <!-- nextPageFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:28 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:03:31 GMT-08:00" duration-ms="2658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.test.YouOrderTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:31 GMT-08:00" name="setUp" finished-at="2023-01-08T20:03:38 GMT-08:00" duration-ms="7911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="noOfProductsPerPage()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:38 GMT-08:00" name="noOfProductsPerPage" finished-at="2023-01-08T20:03:54 GMT-08:00" duration-ms="15534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noOfProductsPerPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:54 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:03:55 GMT-08:00" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:03:55 GMT-08:00" name="setUp" finished-at="2023-01-08T20:04:02 GMT-08:00" duration-ms="7649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByAsinTest()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:02 GMT-08:00" name="searchByAsinTest" finished-at="2023-01-08T20:04:26 GMT-08:00" duration-ms="24039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByAsinTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:26 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:04:27 GMT-08:00" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:27 GMT-08:00" name="setUp" finished-at="2023-01-08T20:04:35 GMT-08:00" duration-ms="7606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByCatagory()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:35 GMT-08:00" name="searchByCatagory" finished-at="2023-01-08T20:04:52 GMT-08:00" duration-ms="17581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByCatagory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:52 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:04:53 GMT-08:00" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:04:53 GMT-08:00" name="setUp" finished-at="2023-01-08T20:05:00 GMT-08:00" duration-ms="6684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByKeyword()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:00 GMT-08:00" name="searchByKeyword" finished-at="2023-01-08T20:05:15 GMT-08:00" duration-ms="14815" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.amazon.test.SearchTest.searchByKeyword(SearchTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByKeyword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:15 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:05:15 GMT-08:00" duration-ms="695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:15 GMT-08:00" name="setUp" finished-at="2023-01-08T20:05:23 GMT-08:00" duration-ms="8260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchByPartialText()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:23 GMT-08:00" name="searchByPartialText" finished-at="2023-01-08T20:05:34 GMT-08:00" duration-ms="10023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByPartialText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:34 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:05:35 GMT-08:00" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:35 GMT-08:00" name="setUp" finished-at="2023-01-08T20:05:42 GMT-08:00" duration-ms="7927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchDescriptionText()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:05:42 GMT-08:00" name="searchDescriptionText" finished-at="2023-01-08T20:06:08 GMT-08:00" duration-ms="25296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDescriptionText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.test.SearchTest@37d4349f]" started-at="2023-01-08T20:06:08 GMT-08:00" name="tearDown" finished-at="2023-01-08T20:06:12 GMT-08:00" duration-ms="3975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.test.SearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

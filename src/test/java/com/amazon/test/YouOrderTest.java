@@ -41,7 +41,7 @@ public class YouOrderTest extends TestBase {
 	}
 
 	// order number of orders placed in last 3 months should be displayed
-	@Test(enabled = false)
+	@Test
 	public void orderDateTest() {
 		String actualDate = yourOrderPage.orderDateTest();
 		String expDate = "December 24, 2022";
@@ -49,14 +49,14 @@ public class YouOrderTest extends TestBase {
 	}
 
 	// last 3 month orders dropdown should be displayed
-	@Test(enabled = false)
+	@Test
 	public void orderPlacedMonthTest() {
 		boolean flag = yourOrderPage.last3monthOrder();
 		Assert.assertTrue(flag);
 	}
 
 	// checking if the product ordered before is displaying or not
-	@Test(enabled = false)
+	@Test
 	public void BuyagainProductDisplayedTest() {
 		boolean flag = yourOrderPage.BuyagainProductDisplayed();
 		Assert.assertTrue(flag);
@@ -64,7 +64,7 @@ public class YouOrderTest extends TestBase {
 
 	// checking if the message displays in case there is no product to ship
 
-	@Test(enabled = false)
+	@Test
 	public void notShippedLinkTest() {
 		String text = yourOrderPage.notShippedLink();
 		Assert.assertTrue(text.contains("Looking for an order? All of your orders have shipped. "));

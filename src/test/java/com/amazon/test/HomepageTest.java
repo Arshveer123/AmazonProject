@@ -35,13 +35,13 @@ public class HomepageTest extends TestBase {
 		driver.close();
 	}
 
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void verifyUserLabel() {
 		boolean flag = homePage.usernameCheck();
 		Assert.assertTrue(flag);
 	}
 
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void yourAccountTest() {
 		homePage.moveToAccountsLink();
 		homePage.yourAccount();
@@ -49,7 +49,7 @@ public class HomepageTest extends TestBase {
 		Assert.assertEquals(title, "Your Account");
 	}
 
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void yourOrderTest() {
 		homePage.moveToAccountsLink();
 		homePage.yourOrder();
@@ -57,7 +57,7 @@ public class HomepageTest extends TestBase {
 		Assert.assertEquals(title, "Your Orders");
 	}
 
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void yourRecommendationTest() {
 		homePage.moveToAccountsLink();
 		homePage.yourRec();
@@ -65,7 +65,7 @@ public class HomepageTest extends TestBase {
 		Assert.assertEquals(text, "Recommended For You");
 	}
 	
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void membershiplinkTest() {
 		homePage.moveToAccountsLink();
 		homePage.membershiplink();
@@ -73,14 +73,14 @@ public class HomepageTest extends TestBase {
 		Assert.assertEquals(title,"Your Memberships & Subscriptions");
 	}
 	
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void switchAccTest() {
 		homePage.moveToAccountsLink();
 		String text=homePage.switchAcclink();
 		Assert.assertEquals(text, "Add account");
 	}
 	
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void signOutTest() {
 		homePage.moveToAccountsLink();
 		homePage.signOut();
@@ -88,7 +88,7 @@ public class HomepageTest extends TestBase {
 		Assert.assertEquals(title, "Amazon Sign In");
 		}
 	
-	@Test(enabled=false)
+	@Test(retryAnalyzer=com.amazon.util.RetryAnalyzer.class)
 	public void findGiftTest() {
 		homePage.moveToAccountsLink();
 		homePage.findGiftLink();

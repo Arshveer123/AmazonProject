@@ -31,14 +31,14 @@ public class LoginPageTest extends TestBase {
 		driver.close();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void CorrectUsernameAndPass() {
 		loginPage.enterEmail(prop.getProperty("username"));
 		loginPage.enterPassword(prop.getProperty("password"));
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void emptyUsername() {
 		loginPage.enterEmail("");
 		String actualmsg = loginPage.emptyFieldsText();
@@ -46,7 +46,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void emptyPassword() {
 		loginPage.enterEmail(prop.getProperty("username"));
 		loginPage.enterPassword("");
@@ -55,7 +55,7 @@ public class LoginPageTest extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void incorrectUsername() {
 		loginPage.enterEmail(prop.getProperty("WrongUser"));
 		String actualmsg = loginPage.inccorrectUser();
